@@ -6,5 +6,5 @@ services:
 jobs:
   include:
   - stage: docker-build
-    if: branch = master
+    if: branch = master OR tag IS present
     script: ./ci/travis_docker_build.sh
