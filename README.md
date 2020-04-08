@@ -32,12 +32,12 @@ the Dropwizard application container.  The examples below should be executed fro
 
 Running the base docker build:
 ```bash
-docker run --target build .
+docker build --target build .
 ```
 
 Generating the Dropwizard application docker image:
 ```bash
-docker run --target package -t my-app .
+docker build --target package -t my-app .
 ```
 
 ## Using the API client
