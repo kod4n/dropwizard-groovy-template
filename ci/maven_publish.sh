@@ -24,4 +24,5 @@ if [[ "${#missingVars[@]}" -gt 0 ]]; then
 fi
 
 ## if we have the required env vars, run gradlew command
-./gradlew --no-daemon "${gradleCommand}"
+echo "command ${gradleCommand} will be run"
+#./gradlew --no-daemon "${gradleCommand}"
